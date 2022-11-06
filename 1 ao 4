@@ -1,0 +1,232 @@
+VETOR NOME E NOTA
+
+//CHAMANDO AS BIBLIOTECAS 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+//CRIANDO O METODO PRINCIPAL
+int main(void)
+{ 
+    // CRIANDO UMA VARIAVEU DO TIPO FLOAT QUE PERMITE NUMEROS QUEBRADOS
+    float pr1[3], pr2[3], media[3];
+    // CRIANDO UMA VARIAVEU DO TIPO CHAR QUE ARMAZENA UM VALOR
+    char nome[3][30], nome1[3][30], situação[3][50];
+    // CRIANDO UMA VARIAVEU DO TIPO INT QUE PERMITE NUMEROS 
+    Int x, y=1;
+        //CRIANDO UM LOOP
+        for(x=0;x<3;x++)
+        {
+            //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+            printf("informe nome %d: ",x+1);
+            // SALVA O QUE FOI DIGITADO PELO USUARIO
+            gets(nome[x]);
+            //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+            printf("informe nota %d do aluno %s: ",y,nome[x]);
+            // SALVA O QUE FOI DIGITADO PELO USUARIO
+            scanf(“%f”,&pr1[x]);
+            // SALVA O QUE FOI DIGITADO PELO USUARIO
+            gets(nome1[x]);
+            y++;
+            //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+            printf(“informe nota %d do aluno %s: “,y,nome[x]);
+            // SALVA O QUE FOI DIGITADO PELO USUARIO
+            scanf(nome1[x]):
+            //PROCESSO
+            y=1;
+        }
+        //CRIANDO UM LOOP
+        for(x=0;x<3;x++)
+        {
+            //PROCESSO//PROCESSO
+            media[x]=(pr1[x]+pr2[x])/2;
+            //CONDIÇAO DE SE ACONTECER ALGO FAÇA ISSO
+            if(media[x]>5)
+            //COPIA UMA STRING
+            strcpy(situação[x],”Aprovado Parabens”);
+            //CONDIÇÃO DE SE CASO CONTRARIO FAÇA ISSO
+            else
+            //COPIA UMA STRING
+            strcpy(situação[x],”Reprovado”);
+        }
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“_____________________________________________________________________”);
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“\n\nNome\tNota1\t\tNota2\tmedia\tSituacao”);
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“\n___________________________________________________________________”);
+    //CRIANDO UM LOOP
+    For(x=0;x<3;x++)
+    {
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“\n%s\t%3.2f\t\t%3.2f\t%3.2f\t%s”,nome[x],pr1[x],pr2[x],media[x],situação[x]);
+    }
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“\n___________________________________________________________________”);
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf(“\n\n”);
+    //ENCERRANDO A EXECUÇÃO DA FUNÇÃO
+    return(0);
+}
+
+
+
+
+
+VETOR NOME LETRAS A E E
+//CHAMANDO AS BIBLIOTECAS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+//CRIANDO O METODO PRINCIPAL
+int main(void)
+{
+    // CRIANDO UMA VARIAVEU DO TIPO INT QUE PERMITE NUMEROS
+    int x, m;
+    // CRIANDO UMA VARIAVEU DO TIPO CHAR QUE ARMAZENA UM VALOR
+    char nome[3][30],conta=0, conte=0, tam=0;
+    //CRIANDO UM LOOP
+    for(x=0;x<3;x++)
+    {
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("\tDigite um nome: ");
+        // SALVA O QUE FOI DIGITADO PELO USUARIO
+        gets(nome[x]);
+    }
+
+    //CRIANDO UM LOOP
+    for(x=0;x<3;x++)
+    {
+        //PROCESSO
+        tam=strlen(nome[x]);
+        //CRIANDO UM LOOP
+        for(m=0;m<=tam-1;m++)
+        {
+            //CONDIÇAO DE SE ACONTECER ALGO FAÇA ISSO
+            if(nome[x][m]=='A'||nome[x][m]=='a')
+            //PROCESSO
+            conta++;
+            //CONDIÇAO DE SE ACONTECER ALGO FAÇA ISSO
+            if(nome[x][m]=='E' || nome[x][m]=='e')
+            //PROCESSO
+            conte++;
+        }
+    }
+    
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf("Nos nomes digitados tem %d letras A",conta);
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf("\nNos nomes digitados tem %d letras E",conte);
+
+    printf("\n\n");
+    //ENCERRANDO A EXECUÇÃO DA FUNÇÃO
+    return(0);
+
+}
+
+
+
+
+
+VETOR DE TRAS PARA FRENTE DOS NUMEROS PARES
+//CHAMANDO AS BIBLIOTECAS
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<conio.h>
+#include<string.h>
+
+//CRIANDO O METODO PRINCIPAL
+int main()
+{
+    // CRIANDO UMA VARIAVEU DO TIPO INT QUE PERMITE NUMEROS
+    int z, vet[11], t=10;
+
+    //CRIANDO UM LOOPV
+    for(z=0; z<11; z++)
+    {
+        //PROCESSO
+        vet[z]= t;
+        //PROCESSO
+        t++;
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("\n O numero crescente do vetor e: %d",vet[z]);
+    }
+
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf("\n\n");
+
+    //CRIANDO UM LOOP
+    for(z=10; z>=0; z=z-2)
+    {
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("%d\t",vet[z]);
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("\n");
+    }
+
+    //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+    printf("\n\n");
+
+    //ENCERRANDO A EXECUÇÃO DA FUNÇÃO 
+    return 0;
+
+}
+
+
+
+
+
+
+NOTA 1 E NOTA 2 – APROVADO / REPROVADO
+//CHAMANDO AS BIBLIOTECAS
+#include <stdio.h>
+#include <stdlib.h>
+
+//CRIANDO O METODO PRINCIPAL
+int main()
+{
+    // CRIANDO UMA VARIAVEU DO TIPO FLOAT QUE PERMITE NUMEROS QUEBRADOS
+    float nota1;
+    // CRIANDO UMA VARIAVEU DO TIPO FLOAT QUE PERMITE NUMEROS QUEBRADOS
+    float nota2;
+    // CRIANDO UMA VARIAVEU DO TIPO FLOAT QUE PERMITE NUMEROS QUEBRADOS
+    float media;
+    // CRIANDO UMA VARIAVEU DO TIPO INT QUE PERMITE NUMEROS
+    int i;
+    //CRIANDO UM LOOP
+
+    for (i=0; i<5; i++)
+    {
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("Digite a nota 1 : ");
+        // SALVA O QUE FOI DIGITADO PELO USUARIO
+        scanf("%f", &nota1);
+
+        //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+        printf("Digite a nota 2 : ");
+        // SALVA O QUE FOI DIGITADO PELO USUARIO
+        scanf("%f", &nota2);
+
+        //PROCESSO
+        media = (nota1 + nota2) / 2 ;
+        //CONDIÇAO DE SE ACONTECER ALGO FAÇA ISSO
+
+        if (media >= 5)
+        {
+            //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+            printf( "APROVADO !!!\n\n");
+        }
+        //CONDIÇÃO DE SE CASO CONTRARIO FAÇA ISSO
+        else
+        {
+            //MOSTRANDO ALGO NA TELA QUE ESTA EM ASPAS DUPLAS
+            printf( "REPROVADO !!!\n\n");
+        }
+    }
+    //ENCERRANDO A EXECUÇÃO DA FUNÇÃO
+    return 0;
+}
+
